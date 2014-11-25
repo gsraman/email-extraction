@@ -13,9 +13,10 @@ for line in fh:
 		if '@' in word:
 			if '.' in word:
 				set1.add(word)
-				count += 1
+				
 
 for item in set1:
+	count += 1
 	fn.write(item)
 	fn.write("\n")
 
