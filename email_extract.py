@@ -11,7 +11,7 @@ for line in fh:
 	line.rstrip()
 	for word in list(line.split()):
 		if '@' in word:
-			if '.' in word:
+			if '.' in word[word.index('@')+1:]:
 				set1.add(word)
 				
 
@@ -22,3 +22,4 @@ for item in set1:
 
 print "Results stored in result.txt. Previous data will be overwritten (if any)"
 print count,"distinct email-ids extracted"
+
